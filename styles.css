@@ -1,0 +1,23 @@
+body {
+  background-color: #5ACCF1;
+}
+
+.main_nav {
+  width: 80vw;
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top:10px;
+  margin-bottom:10px;
+  /*margin-left: 200px;
+  margin-right: 200px;*/
+}
+
+.selected {
+  box-shadow: 5px 5px;
+}
