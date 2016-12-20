@@ -1,11 +1,11 @@
-<h1>welcome from schema</h1>
-
-
+<!-- <h1>welcome from schema</h1> -->
 <div class="container">
 
+<div class="container">
 <div class="jumbotron">
   <p> Here I will talk about my data. The main backend work will be users and the food they possess/food they want. Look before for some example tables. </p>
-  <p>The base column should be user and userId. From there we can start using that as a foreign key for other tables. See below what I have in mind for a multijoin table</p>
+  <p>The base column should be user and userId. From there we can start using that as a foreign key for other tables. See below what I have in mind for a multi-join table</p>
+</div>
 </div>
 
 
@@ -18,8 +18,8 @@
 
 
 
-
-  <table class="table table-bordered">
+<div class="container">
+  <table class="table table-bordered table-striped">
     <tr>
       <td>userId</td><td>name</td><td>item_wanted</td><td>Item_offered</td><td>last_trade_id</td>
     </tr>
@@ -33,7 +33,51 @@
       <td>3</td><td>mandazzi</td><td>carrots</td><td>lettuce</td><td>345</td>
     </tr>
   </table>
+</div>
 
+  <div class="container">
+    <div class="jumbotron">
+      <p> Here is an example of some more data with multiple entries? Could join on name or maybe better to add user ids? I'm just trying to get an idea of what would happen with users who have lots of items wanted or donated</p>
+    </div>
+  </div>
 
+  <div class="container">
+    <table class="table table-bordered table-striped">
+      <tr>
+        <td>item_wanted</td><td>who_wants_it</td><td>who_has_it</td><td>quanity</td>
+      </tr>
+      <tr>
+        <td>kale</td><td>sid</td><td>orangs</td><td>2</td>
+      </tr>
+      <tr>
+        <td>yams</td><td>sid</td><td>capuchins</td><td>15</td>
+      </tr>
+      <tr>
+        <td>avocado</td><td>orangs</td><td>bonobos</td><td>3</td>
+      </tr>
+    </table>
+  </div>
 
+  <div class="container">
+    <div class="jumbotron">
+      <p> Working out specifics of needed fields about food items. Would I need to change date to be readable? or maybe have a different field for different types of units (ie one for grams one for hardcount one for volume?)</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <table class="table table-bordered table-striped">
+      <tr>
+        <td>item_to_donate</td><td>when_purchased</td><td>who_has_it</td><td>quanity</td>
+      </tr>
+      <tr>
+        <td>kale</td><td>dec15</td><td>orangs</td><td>2</td>
+      </tr>
+      <tr>
+        <td>strawberries</td><td>dec7</td><td>sid</td><td>400g</td>
+      </tr>
+      <tr>
+        <td>papaya</td><td>dec19</td><td>tanya</td><td>3</td>
+      </tr>
+    </table>
+  </div>
 </div>

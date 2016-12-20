@@ -1,1 +1,61 @@
-examples of some endpoints? maybe here talk about  post put and delete for changing data in the user's food list
+
+<div class="container">
+
+<div class="container">
+  <div class="jumbotron">
+    <p>The main endpoints are going to be changing the database. It's going to be a basic CRUD app. I will definitely need a get verb to see the list of available items. I will need a delete verb to have user's cross off their items once gone, and a put to add items to the board. And maybe I will need a post to change items? It doesn't seem like I would need to change items once they are up? </p>
+    <p> What kind of middleware would I need? Probably just bodyparser and the authentication (passport). Controllers would probably be handled in a separate file for clean code. </p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <ul>
+      <li>
+      app.get('/inventory', function(req, res, next) {
+        res.status(200).send(inventory);
+      })</li>
+      <br/>
+      <li>
+      app.put('/inventory', function(req, res, next) {
+        inventory.push(req.body);
+        res.status(200).send(inventory);
+      })</li>
+      <br/>
+      <li>
+      app.post('/inventory', function(req, res, next) {
+        for(var i = 0; i < inventory.length; i++) {
+          console.log(inventory[i])
+          if (inventory[i].name === req.body.name) {
+            inventory[i] = req.body;
+            res.status(200).send(inventory)
+          }
+        }
+      })</li>
+      <br/>
+      <li>
+      app.delete('/inventory', function(req, res, next) {
+        for(var i = 0; i < inventory.length; i++) {
+          console.log(inventory[i])
+          if (inventory[i].name === req.body.name) {
+            inventory.splice(i, 1);
+            res.status(200).send(inventory)
+          }
+        }
+      })</li>
+      <br/>
+
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>

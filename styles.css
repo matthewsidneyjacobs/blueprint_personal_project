@@ -26,3 +26,7 @@ body {
   background-color: rgba(235, 225, 227, 0.95);
   border: 2px solid black !important;
 }
+
+.single-item {
+  width:40%;
+}
