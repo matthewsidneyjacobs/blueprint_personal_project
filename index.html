@@ -22,6 +22,18 @@
       <div>
         <a class="btn btn-default" ui-sref="blueprints" ng-class="{selected: activeMenu === 'blueprints' }" ng-click="activeMenu = 'blueprints'"> BLUEPRINTS </a>
       </div>
+      <div>
+        <a class="btn btn-default" ui-sref="controllers" ng-class="{selected: activeMenu === 'controllers' }" ng-click="activeMenu = 'controllers'"> CONTROLLERS </a>
+      </div>
+      <div>
+        <a class="btn btn-default" ui-sref="endpoints" ng-class="{selected: activeMenu === 'endpoints' }" ng-click="activeMenu = 'endpoints'"> ENDPOINTS </a>
+      </div>
+      <div>
+        <a class="btn btn-default" ui-sref="schema" ng-class="{selected: activeMenu === 'schema' }" ng-click="activeMenu = 'schema'"> SCHEMA </a>
+      </div>
+      <div>
+        <a class="btn btn-default" ui-sref="todo" ng-class="{selected: activeMenu === 'todo' }" ng-click="activeMenu = 'todo'"> TO-DO </a>
+      </div>
     </div>
 
     <ui-view></ui-view>

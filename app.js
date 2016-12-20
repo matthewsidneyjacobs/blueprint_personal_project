@@ -18,7 +18,23 @@ angular.module('app', ['ui.router'])
       templateUrl: 'views/blueprints.html',
       url: '/blueprints'
     })
-    
+    .state('schema', {
+      templateUrl: 'views/schema.html',
+      url: '/schema'
+    })
+    .state('endpoints', {
+      templateUrl: 'views/endpoints.html',
+      url: '/endpoints'
+    })
+    .state('controllers', {
+      templateUrl: 'views/controllers.html',
+      url: '/controllers'
+    })
+    .state('todo', {
+      templateUrl: 'views/todo.html',
+      url: '/todo'
+    })
+
 
 
 
